@@ -9,7 +9,7 @@ Step 1 of Subglottic Stenosis Estimation pipeline (Keyframe Selection step) is r
 The software has been tested on Ubuntu 20.04 and uses Python. Required 3.X.
 ### Required packages:
 * Numpy 1.14.0
-* Opencv-python 3.3.0.10
+* Opencv 4.11.0
 * Matplotlib
 * ffmpeg 4.2.7
   
