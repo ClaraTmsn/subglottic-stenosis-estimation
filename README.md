@@ -19,7 +19,7 @@ Our proposed pipeline to estimate stenosis severity consists of two steps: 1) Se
 
 # Data
 Our pipeline is evaluated on Subglottic Stenosis (SGS) Dataset, available [here](https://sites.google.com/unizar.es/subglottic-stenosis-estimation/home). Our dataset contains 16 bronchoscopy videos from 11 patients, with the following characteristics:
-![results](/images/sgs_dataset.png). 
+![results](/images/sgs_dataset.png)
 Frames can be extracted from each video using ffmpeg at framerate 15 fps:  
 ```ffmpeg -i stenosis_1.mp4 -filter:v fps=15 frame_%05d.png```
 # Step 1: Keyframe Selection
