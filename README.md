@@ -1,5 +1,6 @@
 # Subglottic Stenosis Estimation
-**Related publication:** Tomasini, C., Rodríguez-Puigvert, J., Polanco, D., Viñuales, M., Riazuelo, L., Murillo, A.C. (2025). "Automated vision-based assistance tools in bronchoscopy: stenosis severity estimation.", International Journal of Computer Assisted Radiology and Surgery [arxiv](https://arxiv.org/pdf/2505.05136) [Project page](https://sites.google.com/unizar.es/subglottic-stenosis-estimation/home)
+**Related publication:** Tomasini, C., Rodríguez-Puigvert, J., Polanco, D., Viñuales, M., Riazuelo, L., Murillo, A.C. (2025). "Automated vision-based assistance tools in bronchoscopy: stenosis severity estimation.", International Journal of Computer Assisted Radiology and Surgery 
+[[arxiv]](https://arxiv.org/pdf/2505.05136) [[Project page]](https://sites.google.com/unizar.es/subglottic-stenosis-estimation/home)
 
 # License 
 Step 1 of Subglottic Stenosis Estimation pipeline (Keyframe Selection step) is released under AGPLv3 license.
