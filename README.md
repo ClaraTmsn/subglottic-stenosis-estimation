@@ -6,6 +6,10 @@ Step 1 of Subglottic Stenosis Estimation pipeline (Keyframe Selection step) is r
 
 ## Pre-requisites
 The software has been tested on Ubuntu 20.04 and uses Python. Required 3.X.
+### Required packages:
+* Numpy 1.14.0
+* Opencv-python 3.3.0.10
+* Matplotlib
 
 ## Proposed Pipeline
 Our proposed pipeline to estimate stenosis severity consists of two steps: 1) Segmentation, Tracking and Keyframe Selection 2) 3D Reconstruction and Stenosis Estimation. Stenosis is measured in step 2 at the keyframe selected by step 1.
