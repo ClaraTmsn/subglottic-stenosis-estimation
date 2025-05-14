@@ -28,6 +28,6 @@ Step 1 of the pipeline performs segmentation and tracking of the airway lumen un
 or
 ``` img = img[20:img.shape[0]-20,190:img.shape[1]-210,:] ``` for endoscope 2.
 
-Tracking uses package **motrackers**, with modified IoU tracker. Download this package [here](https://github.com/adipandas/multi-object-tracker.git)
+Tracking uses package **[mptrackers](https://github.com/adipandas/multi-object-tracker.git)**, with modified IoU tracker. Download this package 
 ``` git clone https://github.com/adipandas/multi-object-tracker.git ```
 and replace original file *iou_tracker.py* with ours.
