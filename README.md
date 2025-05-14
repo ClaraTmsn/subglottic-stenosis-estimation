@@ -23,4 +23,7 @@ Our pipeline is evaluated on Subglottic Stenosis (SGS) Dataset, available [here]
 Frames can be extracted from each video using ffmpeg at framerate 25 fps:  
 ```ffmpeg -i stenosis_1.mp4 -filter:v fps=25 frame_%05d.png```
 # Step 1: Keyframe Selection
-Step 1 of the pipeline performs segmentation and tracking of the airway lumen until the adequate keyframe is reached. Use file *full_track.py* to run this step. Modify lines 40/41, 59/60 and 146/147 to choose to image crop corresponding to the endoscope used (1,2 or 3). Tracking uses package **motrackers**, with modified IoU tracker. Download this package [here](https://github.com/adipandas/multi-object-tracker.git) and replace original file *iou_tracker.py* with ours.
+Step 1 of the pipeline performs segmentation and tracking of the airway lumen until the adequate keyframe is reached. Use file *full_track.py* to run this step. Modify lines 40/41, 59/60 and 146/147 to choose to image crop corresponding to the endoscope used (1,2 or 3). 
+```#img = img[:,10:img.shape[1]-20,:] ## crop 1: endoscopes 1&3
+#img = img[20:img.shape[0]-20,190:img.shape[1]-210,:] ## crop 2: endoscope 2```
+Tracking uses package **motrackers**, with modified IoU tracker. Download this package [here](https://github.com/adipandas/multi-object-tracker.git) and replace original file *iou_tracker.py* with ours.
