@@ -25,9 +25,13 @@ Frames can be extracted from each video using ffmpeg at framerate 25 fps:
 # Step 1: Keyframe Selection
 Step 1 of the pipeline performs segmentation and tracking of the airway lumen until the adequate keyframe is reached. Use file *full_track.py* to run this step. Modify lines 40/41, 59/60 and 146/147 to choose to image crop corresponding to the endoscope used (1,2 or 3).  
 ``` img = img[:,10:img.shape[1]-20,:] ``` for endoscopes 1&3
+
 or
+
 ``` img = img[20:img.shape[0]-20,190:img.shape[1]-210,:] ``` for endoscope 2.
 
-Tracking uses package **[mptrackers](https://github.com/adipandas/multi-object-tracker.git)**, with modified IoU tracker. Download this package 
+Tracking uses package **[motrackers](https://github.com/adipandas/multi-object-tracker.git)**, with modified IoU tracker. Download this package 
+
 ``` git clone https://github.com/adipandas/multi-object-tracker.git ```
+
 and replace original file *iou_tracker.py* with ours.
