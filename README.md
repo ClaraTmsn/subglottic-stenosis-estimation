@@ -17,7 +17,7 @@ The software has been tested on Ubuntu 20.04 and uses Python. Required 3.X.
 Our proposed pipeline to estimate stenosis severity consists of two steps: 1) Segmentation, Tracking and Keyframe Selection 2) 3D Reconstruction and Stenosis Estimation. Stenosis is measured in step 2 at the keyframe selected by step 1.
 ![results](/images/pipeline_stenosis.png)
 
-# Data
+# SGS Dataset
 Our pipeline is evaluated on Subglottic Stenosis (SGS) Dataset, available [here](https://sites.google.com/unizar.es/subglottic-stenosis-estimation/home). Our dataset contains 16 bronchoscopy videos from 11 patients, with the following characteristics:
 ![results](/images/sgs_dataset.png)
 Frames can be extracted from each video using ffmpeg at framerate 15 fps:  
