@@ -1,20 +1,22 @@
 # Subglottic Stenosis Estimation
 **Related publication:** Tomasini, C., Rodríguez-Puigvert, J., Polanco, D., Viñuales, M., Riazuelo, L., Murillo, A.C. (2025). "Automated vision-based assistance tools in bronchoscopy: stenosis severity estimation.", International Journal of Computer Assisted Radiology and Surgery [arxiv](https://arxiv.org/pdf/2505.05136)
 
-## License 
+# License 
 Step 1 of Subglottic Stenosis Estimation pipeline (Keyframe Selection step) is released under AGPLv3 license.
 
-## Pre-requisites
+# Pre-requisites
 The software has been tested on Ubuntu 20.04 and uses Python. Required 3.X.
 ### Required packages:
 * Numpy 1.14.0
 * Opencv-python 3.3.0.10
 * Matplotlib
 
-## Proposed Pipeline
+# Proposed Pipeline
 Our proposed pipeline to estimate stenosis severity consists of two steps: 1) Segmentation, Tracking and Keyframe Selection 2) 3D Reconstruction and Stenosis Estimation. Stenosis is measured in step 2 at the keyframe selected by step 1.
 ![results](/images/pipeline_stenosis.png)
 
-## Data
+# Data
+Our pipeline is evaluated on Subglottic Stenosis (SGS) Dataset, available [here](https://sites.google.com/unizar.es/subglottic-stenosis-estimation/home). Our dataset contains 16 bronchoscopy videos from 11 patients, with the following characteristics:
+![results](/images/sgs_dataset.png). 
 
-## Step 1: Keyframe Selection
+# Step 1: Keyframe Selection
